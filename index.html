@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="img/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/b0cb6f0851.js" crossorigin="anonymous"></script>
+    <title>QRAnything | Generates QR code for free</title>
+</head>
+
+
+
+<body>
+  
+<header class="header flex">
+
+   <div class="header__wrapper container flex">
+
+   <span class="header__logo fw-bold"><a href="#index.html">QRAnything</a></span>
+   
+   <nav class="navbar">
+
+      <button class="navbar__btn" aria-controls="primary-navigation" aria-expanded="false">
+         <div class="navbar__btn-burger"></button></button>
+      
+      <ul class="navbar__list" id="primary-navigation">
+         <li><a class="navbar__list__link" href="#whynow">Why QRAnything?</a></li>
+         <li><a class="navbar__list__link" href="#faq">FAQ</a></li>
+         <li><a class="navbar__list__link" href="#contact">Contact Us</a></li>
+      </ul>
+   </nav>
+</div>
+
+</header>         
+        
+
+<main>
+
+   <article class="hero container">
+
+    <div class="hero__inner">
+
+        <h1 class="hero__title fs-700 ">Create your code NOW!</h1>
+
+        <p class="hero__p fs-400">QRAnything creates high-quality, branded QR codes for your products, websites or services.</p>
+
+      <div class="hero__form">
+
+       <div class="hero__form__input">
+         <small class="hero__form__input-error__message hide">Please enter a valid URL</small>
+         <i class="fa-solid fa-link fa-lg"></i>
+         <input class="bg-gray1" type="url" id="url" placeholder="Please enter a URL">
+       </div>
+
+       <div class="hero__form__btn">
+         <button class="btn hero__inner__form-btn" type="submit" id="urlSubmit">Generate</button>
+      </div>
+     
+     </div>
+
+     <div class="hero__control">
+
+      <div class="hero__control__settings">
+         <i class="fa-solid fa-gear fa-lg"></i>
+         <button class="fs-400 text-gray5" id="customization">Customization</button>
+     </div>
+
+     <div class="hero__control__clear">
+      <i class="fa-solid fa-xmark fa-lg"></i>
+      <button class="fs-400 text-gray5" id="clear__url">Clear</button>
+     </div>
+
+      </div>
+
+
+      <div class="customization close">
+         <div class="customization__title__close flex">
+            <h2 class="fs-500 customization__title">Customization</h2>
+            <button class="customization__close">
+               <i class="fa-solid fa-xmark fa-lg"></i>
+            </button>
+         </div>
+
+         <div class="customization__color">
+            <h3 class="customization__color__title">Color</h3>
+
+           <div class="customization__color__inner grid">
+            <div class="customization__color__option">
+               <input type="radio" id="black" name="color" value="000000" checked>
+               <label for="black">
+                  <div class="black">Black</div>
+               </label>
+            </div>
+
+            <div class="customization__color__option">
+               <input type="radio" id="blue" name="color" value="182970">
+               <label for="blue" >
+                  <div class="blue">Blue</div>
+               </label>
+            </div>
+
+            <div class="customization__color__option">
+               <input type="radio" id="green" name="color" value="0b8757">
+               <label for="green">
+                  <div class="green">Green</div>
+               </label>
+            </div>
+
+            <div class="customization__color__option">
+               <input type="radio" id="red" name="color" value="c92c20">
+               <label for="red">
+                  <div class="red">Red</div>
+               </label>
+            </div>
+           </div>
+            
+            
+         </div>
+      
+
+      <div class="customization__format">
+         <h3 class="customization__format__title">Format</h3>
+
+        <div class="customization__format__inner grid">
+         <div class="customization__format__option">
+            <input type="radio" id="png" name="format" value="png" checked>
+            <label for="png">
+               <div>PNG</div>
+            </label>
+         </div>
+
+         <div class="customization__format__option">
+            <input type="radio" id="jpg" name="format" value="jpg">
+            <label for="jpg">
+               <div>JPG</div>
+            </label>
+         </div>
+
+         <div class="customization__format__option">
+            <input type="radio" id="jpeg" name="format" value="jpeg">
+            <label for="jpeg">
+               <div>JPEG</div>
+            </label>
+         </div>
+
+         <div class="customization__format__option">
+            <input type="radio" id="svg" name="format" value="svg">
+            <label for="svg">
+               <div>SVG</div>
+            </label>
+         </div>
+        </div>
+         
+         
+      </div>
+
+      <div class="customization__size">
+         <h3 class="customization__size__title">Size</h3>
+
+        <div class="customization__size__inner grid">
+         <div class="customization__size__option">
+            <input type="radio" id="oneHundredFifty" name="size" value="150" checked>
+            <label for="oneHundredFifty">
+               <div>150x150</div>
+            </label>
+         </div>
+
+         <div class="customization__size__option">
+            <input type="radio" id="twoHundred" name="size" value="200">
+            <label for="twoHundred">
+               <div>200x200</div>
+            </label>
+         </div>
+
+         <div class="customization__size__option">
+            <input type="radio" id="threeHundred" name="size" value="300">
+            <label for="threeHundred">
+               <div>300x300</div>
+            </label>
+         </div>
+
+         <div class="customization__size__option">
+            <input type="radio" id="threeHundredFifty" name="size" value="350">
+            <label for="threeHundredFifty">
+               <div>350x350</div>
+            </label>
+         </div>
+        </div>
+         
+         
+      </div>
+
+      <button class="customization__save">Save changes</button>
+   </div>
+
+
+   <div class="qrcode grid hide">
+      <div class="qrcode__inner">
+       <div class="qrcode__img">
+         <img class="qrcode__img-src" src="">
+       </div>
+       <div class="qrcode__btn">
+         <button class="qrcode__btn__download">
+            <a download="qr-code" href="#" id="download">Download</a>
+         </button>
+         <button class="qrcode__btn__view">
+            <a href="#" target="_blank" id="view-full-size">View in orginal size</a>
+         </button>
+       </div>
+      </div>
+   </div>
+   
+</div>
+</article>
+
+   <section class="why__QRAnything">
+
+      <div class="why__QRAnything__wrapper container">
+
+         <h2 class="fs-700 why__QRAnything__title">Why QRAnything?</h2>
+
+         <div class="why__QRAnything__cards">
+
+          <div class="why__QRAnything__card">
+            <div class="why__QRAnything__card-icon">
+               <i class="fa-regular fa-money-bill-1 fa-lg"></i>
+            </div>
+            <div class="why__QRAnything__card-title">
+               <h2>Free</h2>
+            </div>
+            <div class="why__QRAnything__card-p">
+               <p >We aspire to make the world smaller and more connected by providing free QR-code yet high quality templates for individuals, businesses and organizations. Our mission is t to help people make the most out of their QR codes.               </p>
+            </div>
+
+         
+         </div>
+
+
+         <div class="why__QRAnything__card" id="whynow">
+             <div class="why__QRAnything__card-icon">
+               <i class="fa-solid fa-users fa-lg"></i>
+             </div>
+             <div class="why__QRAnything__card-title">
+               <h2>Reliable</h2>
+             </div>
+             <div class="why__QRAnything__card-p">
+               <p >QRAnything takes the uncertainty and guesswork out of generating QR Codes by creating them to look great and be easy to share. We're making it easy for businesses to take advantage of this fast growing trend, so spread the word!</p>
+             </div>
+         </div>
+         
+
+
+         <div class="why__QRAnything__card">
+             <div class="why__QRAnything__card-icon">
+               <i class="fa-solid fa-computer-mouse fa-lg"></i>
+             </div>
+             <div class="why__QRAnything__card-title">
+               <h2>Efficient</h2>
+             </div>
+             <div class="why__QRAnything__card-p">
+               <p >We help organizations, small and large, become more efficient and more successful by creating impactful QR Codes in mere seconds. We enable the sustainable growth of your business by making QR codes work for you.
+
+               </p>
+             </div>
+         </div>
+         
+         
+      </div>
+      </div>
+   </section>
+</main>
+
+<aside class="faq" id="faq">
+
+   <div class="container faq__wrapper">
+      <h2 class="fs-700 faq__title">FAQ</h2>
+
+   <div class="faq__question">
+      <h3 class="fs-600 text-primary5">What is a QR Code?</h3>
+      <p class="faq__question__answer">It's a machine-readable code consisting of an array of black and white squares, typically used for storing URLs or other information for reading by the camera on a smartphone.</p>
+   </div>
+
+   <div class="faq__question">
+      <h3 class="fs-600 text-primary5">Can I use it comercially?</h3>
+      <p class="faq__question__answer">Yes, the QR codes generated by the users are 100% free to be used both personally and comercially. Though, QRAnything is not resposible for the content nor the usage of the codes.</p>
+   </div>
+
+   <div class="faq__question">
+      <h3 class="fs-600 text-primary5">Is QRAnything safe to use?</h3>
+      <p class="faq__question__answer ">Yes. Creating and downloading QR Codes on QRAnything is safe and secure. Privace is our main concern, that's why our service doesn't require any personal information.</p>
+   </div>
+   </div>
+</aside>
+
+
+<footer class="footer" id="contact">
+
+   <div class="footer__wrapper container">
+
+         <div class="footer__logo">
+            <p class="fw-bold"><a href="#index.html">QRAnything</a></p>
+            <small class="fs-400">Copyright &copy; <span class="year"></span> <a href="https://sosamson.com" target = "_blank" 
+               rel = "noopener noreferrer">QRAnything.</a> All rights reserved</small>
+         </div>
+
+         <div class="footer__socials">
+            <a href="https://twitter.com/sosamsony" target="_blank"><span class="sr-only">Twitter</span><i class="fa-brands fa-twitter fa-xl"></i></a>
+            <a href="https://github.com/sosamsony" target="_blank"><span class="sr-only">Github</span><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://linkedin.com/in/sosamsony"><span class="sr-only">LinkedIn</span><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://facebook.com/sosamsony"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook fa-xl"></i></a>
+         </div>
+
+   </div>
+
+</footer>
+   
+<script src="program.js"></script>  
+</body>
+</html>
